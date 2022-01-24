@@ -78,12 +78,21 @@ function checkGanador(){
          opcion.removeEventListener
          ("click" , selector );
       }
-  ); 
+    ); 
 
 
+      if (puntosMaquina == 5)
+      {
+        h1Resultado.textContent = "Has sido derrotado";
+        h1Resultado.style.color = "Red";
+      }
     
-    h1Resultado.textContent = "!En hora buena! Has ganado la partida";
-    h1Resultado.style.color = "Green";
+      if (puntosUsuario == 5)
+      {
+        h1Resultado.textContent = "!En hora buena! Has ganado la partida";
+        h1Resultado.style.color = "Green";;
+      }
+
 
 
     h2Resultado.textContent = "Jugar otra partida"
